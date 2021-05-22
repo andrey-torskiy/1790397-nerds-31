@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+  <head>
+    <meta charset="utf-8">
+    <title>Готовые шаблоны: Нёрдс</title>
+  </head>
+
+  <body>
+  	<header>
+  		<nav>
+  			<a href="index.html">
+  				<img src="https://via.placeholder.com/160x65" alt="Логотип дизайнерской компании «Нёрдс»">
+  			</a>
+	  		<ul>
+	  			<li>
+	  				<a href="blank.html">Студия</a>
+	  			</li>
+	  			<li>
+	  				<a href="blank.html">Клиенты</a>
+	  			</li>
+	  			<li>
+	  				<a href="catalog.html">Каталог</a>
+	  			</li>
+	  			<li>
+	  				<a href="blank.html">Контакты</a>
+	  			</li>
+	  		</ul>
+
+	  		<a href="blank.html">
+	  			<img src="https://via.placeholder.com/15x15" alt="Иконка корзины">
+	  			Корзина
+	  		</a>
+  		</nav>
+  	</header>
+
+  	<main>
+  		<h1>Магазин готовых шаблонов</h1>
+
+  		<!-- Раздел "Фильтр" -->
+  		<section>
+  			<h2>Фильтр товаров</h2>
+  			<!-- h2 не отображать на странице -->
+  			<form method="get" action="https://echo.htmlacademy.ru">
+  				
+  				<!-- Подраздел выбора стоимости -->
+  				<fieldset>
+  					<legend>Стоимость:</legend>	
+  					<p>
+			  			<input type="range" id="id_price" name="price" min="0" max="20000" step="500">
+		  			</p>
+		  			<p>
+			  			<label for="id_price_from">от</label>
+			  			<input id="id_price_from" type="text" name="price_from" placeholder="0">
+			  			<label for="id_price_to">до</label>
+			  			<input id="id_price_to" type="text" name="price_to" placeholder="15000">
+		  			</p>
+	  			</fieldset>
+
+	  			<!-- Подраздел выбора сетки -->
+	  			<fieldset>
+	  				<legend>Сетка:</legend>
+	  				<ul>
+	  					<li>
+		  					<input id="id_radio_adp" type="radio" name="grid_type" value="adaptive" checked>
+		  					<label for="id_radio_adp">Адаптивная</label>
+		  				</li>
+		  				<li>
+		  					<input id="id_radio_fix" type="radio" name="grid_type" value="fixed">
+		  					<label for="id_radio_fix">Фиксированная</label>
+		  				</li>
+		  				<li>
+		  					<input id="id_radio_rub" type="radio" name="grid_type" value="rubber">
+		  					<label for="id_radio_rub">Резиновая</label>
+		  				</li>
+	  				</ul>
+	  			</fieldset>
+
+	  			<!-- Подраздел выбора особенностей -->
+	  			<fieldset>
+	  				<legend>Особенности:</legend>
+	  				<ul>
+	  					<li>
+	  						<input id="id_check_slider" type="checkbox" name="slider" checked>
+	  						<label for="id_check_slider">Слайдер</label>
+	  					</li>
+	  					<li>
+	  						<input id="id_check_adv" type="checkbox" name="advantages_block">
+	  						<label for="id_check_adv">Блок преимуществ</label>
+	  					</li>
+	  					<li>
+	  						<input id="id_check_news" type="checkbox" name="news" checked>
+	  						<label for="id_check_news">Новости</label>
+	  					</li>
+	  					<li>
+	  						<input id="id_check_gallery" type="checkbox" name="gallery">
+	  						<label for="id_check_gallery">Галерея</label>
+	  					</li>
+	  					<li>
+	  						<input id="id_check_basket" type="checkbox" name="basket">
+	  						<label for="id_check_basket">Корзина</label>
+	  					</li>
+	  				</ul>
+	  			</fieldset>
+	  			<button type="submit">Показать</button>
+  			</form>
+  		</section>
+
+  		<!-- Раздел "Сортировка" -->
+  		<section>
+  			<h2>Сортировка</h2>
+  			<!-- h2 не отображать на странице -->
+  			<form method="get" action="https://echo.htmlacademy.ru">  			
+	  			<fieldset>
+	  				<legend>Сортировать:</legend>
+		  			<ul>
+		  				<li>
+		  					<label for="id_radio_price">По цене</label>
+		  					<input id="id_radio_price" type="radio" name="type_of_sorting">
+		  				</li>
+		  				<li>
+		  					<label for="id_radio_type">По типу</label>
+		  					<input id="id_radio_type" type="radio" name="type_of_sorting">
+		  				</li>
+		  				<li>
+		  					<label for="id_radio_name">По названию</label>
+		  					<input id="id_radio_name" type="radio" name="type_of_sorting">
+		  				</li>
+		  			</ul>
+	  			</fieldset>
+
+	  			<fieldset>
+		  			<ul>
+		  				<li>
+		  					<label for="id_radio_sort_down">По убыванию</label>
+		  					<input id="id_radio_sort_down" type="radio" name="direction_of_sorting">
+		  				</li>
+		  				<li>
+		  					<label for="id_radio_sort_up">По возрастанию</label>
+		  					<input id="id_radio_sort_up" type="radio" name="direction_of_sorting">
+		  				</li>
+		  			</ul>
+	  			</fieldset>
+  			</form>
+  		</section>
+
+  		<!-- Раздел "Список шаблонов" -->
+  		<section>
+  			<h2>Список шаблонов</h2>
+  			<!-- h2 не отображать на странице -->
+  			<ul>
+  				<li>
+  					<img src="https://via.placeholder.com/360x618" alt="Шаблон Sedona">
+  					<a href="blank.html">
+  						<h3>SEDONA</h3>
+  					</a>
+  					<p>Информационный сайт для туристов</p>
+  					<button type="button">9 900 ₽</button>
+  				</li>
+  				<li>
+  					<img src="https://via.placeholder.com/360x618" alt="Шаблон Pink">
+  					<a href="blank.html">
+  						<h3>Pink</h3>
+  					</a>
+  					<p>Приложение для поднятия настроения</p>
+  					<button type="button">8 500 ₽</button>
+  				</li>
+  				<li>
+  					<img src="https://via.placeholder.com/360x618" alt="Шаблон Borodinski">
+  					<a href="blank.html">
+  						<h3>BORODINSKI</h3>
+  					</a>
+  					<p>Барбершоп</p>
+  					<button type="button">10 500 ₽</button>
+  				</li>
+  				<li>
+  					<img src="https://via.placeholder.com/360x618" alt="Шаблон Mishka">
+  					<a href="blank.html">
+  						<h3>Mishka</h3>
+  					</a>
+  					<p>Интернет магазин вязаных вещей</p>
+  					<button type="button">8 000 ₽</button>
+  				</li>
+  				<li>
+  					<img src="https://via.placeholder.com/360x618" alt="Шаблон A+">
+  					<a href="blank.html">
+  						<h3>А+</h3>
+  					</a>
+  					<p>Приложение онлайн-школы</p>
+  					<button type="button">13 000 ₽</button>
+  				</li>
+  				<li>
+  					<img src="https://via.placeholder.com/360x618" alt="Шаблон Кваст">
+  					<a href="blank.html">
+  						<h3>Кваст</h3>
+  					</a>
+  					<p>Интернет магазин кваса</p>
+  					<button type="button">7 900 ₽</button>
+  				</li>
+  			</ul>
+  			<ul>
+  				<!-- Ссылка "Предыдущая" скрыта для первой страницы каталога  -->
+  				<li>
+  					<a href="#">Предыдущая</a>
+  				</li>
+  				<li>
+  					<a href="#">1</a>
+  				</li>
+  				<li>
+  					<a href="#">2</a>
+  				</li>
+  				<li>
+  					<a href="#">3</a>
+  				</li>
+  				<li>
+  					<a href="#">Следующая</a>
+  				</li>
+  			</ul>
+
+  			
+  		</section>
+  		
+  	</main>
+
+  	<footer>
+  		<!-- Раздел "Ссылки на страницы в соцсетях"" -->
+  		<section>
+  			<h2>Соцсети</h2>
+  			<!-- h2 не отображать на странице -->
+  			<ul>
+  				<li>
+  					<a href="#">Вконтакте</a>
+  				</li>
+  				<li>
+  					<a href="#">Facebook</a>
+  				</li>
+  				<li>
+  					<a href="#">Instagram</a>
+  				</li>
+  			</ul>
+  		</section>
+
+  		<section>
+  			<h3>Давайте дружить, это выгодно!</h3>
+  			<p>Скидки 10% для друзей из социальных сетей</p>
+  		</section>		
+  	</footer>
+
+  </body>
+
+ </html>
