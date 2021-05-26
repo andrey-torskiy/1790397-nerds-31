@@ -9,7 +9,9 @@
       <nav>
         <a href="index.html">
           <img
-            src="https://via.placeholder.com/160x65"
+            src="img/logos/nerds_logo.svg"
+            width="160"
+            height="65"
             alt="Логотип дизайнерской компании «Нёрдс»"
           />
         </a>
@@ -43,7 +45,7 @@
           <!-- Подраздел выбора стоимости -->
           <fieldset>
             <legend>Стоимость:</legend>
-            <p>
+            <div>
               <input
                 type="range"
                 id="id_price"
@@ -52,8 +54,8 @@
                 max="20000"
                 step="500"
               />
-            </p>
-            <p>
+            </div>
+            <div>
               <label for="id_price_from">от</label>
               <input
                 id="id_price_from"
@@ -61,6 +63,8 @@
                 name="price_from"
                 placeholder="0"
               />
+            </div>
+            <div>
               <label for="id_price_to">до</label>
               <input
                 id="id_price_to"
@@ -68,55 +72,77 @@
                 name="price_to"
                 placeholder="15000"
               />
-            </p>
+            </div>
           </fieldset>
           <!-- Подраздел выбора сетки -->
           <fieldset>
             <legend>Сетка:</legend>
-
-            <input
-              id="id_radio_adp"
-              type="radio"
-              name="grid_type"
-              value="adaptive"
-              checked
-            />
-            <label for="id_radio_adp">Адаптивная</label><br />
-
-            <input
-              id="id_radio_fix"
-              type="radio"
-              name="grid_type"
-              value="fixed"
-            />
-            <label for="id_radio_fix">Фиксированная</label><br />
-
-            <input
-              id="id_radio_rub"
-              type="radio"
-              name="grid_type"
-              value="rubber"
-            />
-            <label for="id_radio_rub">Резиновая</label><br />
+            <div>
+              <input
+                id="id_radio_adp"
+                type="radio"
+                name="grid_type"
+                value="adaptive"
+                checked
+              />
+              <label for="id_radio_adp">Адаптивная</label><br />
+            </div>
+            <div>
+              <input
+                id="id_radio_fix"
+                type="radio"
+                name="grid_type"
+                value="fixed"
+              />
+              <label for="id_radio_fix">Фиксированная</label><br />
+            </div>
+            <div>
+              <input
+                id="id_radio_rub"
+                type="radio"
+                name="grid_type"
+                value="rubber"
+              />
+              <label for="id_radio_rub">Резиновая</label><br />
+            </div>
           </fieldset>
           <!-- Подраздел выбора особенностей -->
           <fieldset>
             <legend>Особенности:</legend>
-
-            <input id="id_check_slider" type="checkbox" name="slider" checked />
-            <label for="id_check_slider">Слайдер</label><br />
-
-            <input id="id_check_adv" type="checkbox" name="advantages_block" />
-            <label for="id_check_adv">Блок преимуществ</label><br />
-
-            <input id="id_check_news" type="checkbox" name="news" checked />
-            <label for="id_check_news">Новости</label><br />
-
-            <input id="id_check_gallery" type="checkbox" name="gallery" />
-            <label for="id_check_gallery">Галерея</label><br />
-
-            <input id="id_check_basket" type="checkbox" name="basket" />
-            <label for="id_check_basket">Корзина</label><br />
+            <div>
+              <input
+                id="id_check_slider"
+                type="checkbox"
+                name="slider"
+                checked
+              />
+              <label for="id_check_slider">Слайдер</label>
+            </div>
+            <br />
+            <div>
+              <input
+                id="id_check_adv"
+                type="checkbox"
+                name="advantages_block"
+              />
+              <label for="id_check_adv">Блок преимуществ</label>
+            </div>
+            <br />
+            <div>
+              <input id="id_check_news" type="checkbox" name="news" checked />
+              <label for="id_check_news">Новости</label>
+            </div>
+            <br />
+            <div>
+              <input id="id_check_gallery" type="checkbox" name="gallery" />
+              <label for="id_check_gallery">Галерея</label>
+            </div>
+            <br />
+            <div>
+              <input id="id_check_basket" type="checkbox" name="basket" />
+              <label for="id_check_basket">Корзина</label>
+            </div>
+            <br />
           </fieldset>
           <button type="submit">Показать</button>
         </form>
@@ -128,30 +154,36 @@
         <form method="get" action="https://echo.htmlacademy.ru">
           <fieldset>
             <legend>Сортировать:</legend>
-
-            <label for="id_radio_price">По цене</label>
-            <input id="id_radio_price" type="radio" name="type_of_sorting" />
-
-            <label for="id_radio_type">По типу</label>
-            <input id="id_radio_type" type="radio" name="type_of_sorting" />
-
-            <label for="id_radio_name">По названию</label>
-            <input id="id_radio_name" type="radio" name="type_of_sorting" />
+            <div>
+              <label for="id_radio_price">По цене</label>
+              <input id="id_radio_price" type="radio" name="type_of_sorting" />
+            </div>
+            <div>
+              <label for="id_radio_type">По типу</label>
+              <input id="id_radio_type" type="radio" name="type_of_sorting" />
+            </div>
+            <div>
+              <label for="id_radio_name">По названию</label>
+              <input id="id_radio_name" type="radio" name="type_of_sorting" />
+            </div>
           </fieldset>
           <fieldset>
-            <label for="id_radio_sort_down">По убыванию</label>
-            <input
-              id="id_radio_sort_down"
-              type="radio"
-              name="direction_of_sorting"
-            />
-
-            <label for="id_radio_sort_up">По возрастанию</label>
-            <input
-              id="id_radio_sort_up"
-              type="radio"
-              name="direction_of_sorting"
-            />
+            <div>
+              <label for="id_radio_sort_down">По убыванию</label>
+              <input
+                id="id_radio_sort_down"
+                type="radio"
+                name="direction_of_sorting"
+              />
+            </div>
+            <div>
+              <label for="id_radio_sort_up">По возрастанию</label>
+              <input
+                id="id_radio_sort_up"
+                type="radio"
+                name="direction_of_sorting"
+              />
+            </div>
           </fieldset>
         </form>
       </section>
@@ -160,7 +192,18 @@
         <h2>Список шаблонов</h2>
         <!-- h2 не отображать на странице -->
         <div>
-          <img src="https://via.placeholder.com/360x618" alt="Шаблон Sedona" />
+          <img
+            src="img/templates/templates_browser.svg"
+            width="360"
+            height="40"
+            alt="серая полоса с тремя белыми кругами"
+          />
+          <img
+            src="img/templates/img_sedona.jpg"
+            width="358"
+            height="578"
+            alt="Шаблон сайта Sedona"
+          />
           <a href="blank.html">
             <h3>SEDONA</h3>
           </a>
@@ -169,7 +212,18 @@
         </div>
 
         <div>
-          <img src="https://via.placeholder.com/360x618" alt="Шаблон Pink" />
+          <img
+            src="img/templates/templates_browser.svg"
+            width="360"
+            height="40"
+            alt="серая полоса с тремя белыми кругами"
+          />
+          <img
+            src="img/templates/img_pink.jpg"
+            width="358"
+            height="578"
+            alt="Шаблон сайта Pink"
+          />
           <a href="blank.html">
             <h3>Pink</h3>
           </a>
@@ -179,8 +233,16 @@
 
         <div>
           <img
-            src="https://via.placeholder.com/360x618"
-            alt="Шаблон Borodinski"
+            src="img/templates/templates_browser.svg"
+            width="360"
+            height="40"
+            alt="серая полоса с тремя белыми кругами"
+          />
+          <img
+            src="img/templates/img_barbershop.jpg"
+            width="358"
+            height="578"
+            alt="Шаблон сайта Borodinski"
           />
           <a href="blank.html">
             <h3>BORODINSKI</h3>
@@ -190,7 +252,18 @@
         </div>
 
         <div>
-          <img src="https://via.placeholder.com/360x618" alt="Шаблон Mishka" />
+          <img
+            src="img/templates/templates_browser.svg"
+            width="360"
+            height="40"
+            alt="серая полоса с тремя белыми кругами"
+          />
+          <img
+            src="img/templates/img_mishka.jpg"
+            width="358"
+            height="578"
+            alt="Шаблон сайта Mishka"
+          />
           <a href="blank.html">
             <h3>Mishka</h3>
           </a>
@@ -199,7 +272,18 @@
         </div>
 
         <div>
-          <img src="https://via.placeholder.com/360x618" alt="Шаблон A+" />
+          <img
+            src="img/templates/templates_browser.svg"
+            width="360"
+            height="40"
+            alt="серая полоса с тремя белыми кругами"
+          />
+          <img
+            src="img/templates/img_aplus.jpg"
+            width="358"
+            height="578"
+            alt="Шаблон A+"
+          />
           <a href="blank.html">
             <h3>А+</h3>
           </a>
@@ -208,7 +292,18 @@
         </div>
 
         <div>
-          <img src="https://via.placeholder.com/360x618" alt="Шаблон Кваст" />
+          <img
+            src="img/templates/templates_browser.svg"
+            width="360"
+            height="40"
+            alt="серая полоса с тремя белыми кругами"
+          />
+          <img
+            src="img/templates/img_kvast.jpg"
+            width="358"
+            height="578"
+            alt="Шаблон Кваст"
+          />
           <a href="blank.html">
             <h3>Кваст</h3>
           </a>
@@ -243,13 +338,34 @@
         <!-- h2 не отображать на странице -->
         <ul>
           <li>
-            <a href="#">Вконтакте</a>
+            <a href="#">
+              <img
+                src="img/logos/vk_icon.png"
+                width="26"
+                height="15"
+                alt="Ссылка на страницу в социальной сети Вконтакте"
+              />
+            </a>
           </li>
           <li>
-            <a href="#">Facebook</a>
+            <a href="#">
+              <img
+                src="img/logos/fb_icon.png"
+                width="12"
+                height="22"
+                alt="Ссылка на страницу в социальной сети Facebook"
+              />
+            </a>
           </li>
           <li>
-            <a href="#">Instagram</a>
+            <a href="#">
+              <img
+                src="img/logos/insta_icon.png"
+                width="21"
+                height="21"
+                alt="Ссылка на страницу в социальной сети Instagram"
+              />
+            </a>
           </li>
         </ul>
       </section>
