@@ -1,114 +1,129 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="page" lang="ru">
+
   <head>
     <meta charset="utf-8" />
     <title>HTML Academy: Нёрдс</title>
+    <link rel="icon" href="favicon.ico">
+    <link rel="icon" href="favicon/icon.svg" type="img/svg+xml">
+    <link rel="apple-touch-icon" href="favicon/180.png">
+    <link rel="manifest" href="manifest.webmanifest">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet" type="text/css">
   </head>
-  <body>
-    <header>
-      <nav>
-        <a href="index.html">
+
+  <body class="page-body">
+    <header class="main-header">
+      <nav class="main-navigation">
+        <a class="main-header-logo" href="index.html">
           <img
+            class="image logo-img"
             src="img/logos/nerds_logo.svg"
             width="160"
             height="65"
             alt="Логотип дизайнерской компании «Нёрдс»"
           />
         </a>
-        <ul>
-          <li>
-            <a href="blank.html">Студия</a>
+        <ul class="site-navigation">
+          <li class="site-navigation-item">
+            <a class="text-link" href="blank.html">Студия</a>
           </li>
-          <li>
-            <a href="blank.html">Клиенты</a>
+          <li class="site-navigation-item">
+            <a class="text-link" href="blank.html">Клиенты</a>
           </li>
-          <li>
-            <a href="catalog.html">Каталог</a>
+          <li class="site-navigation-item">
+            <a class="text-link" href="catalog.html">Каталог</a>
           </li>
-          <li>
-            <a href="blank.html">Контакты</a>
+          <li class="site-navigation-item">
+            <a class="text-link" href="blank.html">Контакты</a>
           </li>
         </ul>
-        <a href="blank.html">
-          <img src="https://via.placeholder.com/15x15" alt="Иконка корзины" />
+        <a class="cart text-link" class="cart-icon" href="blank.html">
+          <img class="image cart-icon-img" src="https://via.placeholder.com/15x15" alt="Иконка корзины" />
           Корзина
         </a>
       </nav>
     </header>
-    <main>
-      <h1>Дизайнерская компания «Нёрдс»</h1>
+
+    <main class="container">
+      <h1 class="container-title">Дизайнерская компания «Нёрдс»</h1>
       <!-- h1 не отображать на странице -->
       <!-- Раздел со слайдами об особенностях компании -->
-      <section>
+      <section class="features">
         <h2>Особенности компании</h2>
         <!-- h2 не отображать на странице -->
-        <ul>
-          <li>
-            <p>Долго, дорого, скрупулезно.</p>
+        <ul class="slider-list">
+          <li class="slider-item">
+            <p class="slider-title">Долго, дорого, скрупулезно.</p>
             <p>
               Математически выверенный дизайн
               <br />
               для вашего сайта или мобильного приложения
             </p>
-            <a href="blank.html">Узнать больше</a>
+            <a class="button slider-button text-link" href="blank.html">Узнать больше</a>
             <!-- декоративное изображение -->
             <img
+              class="image slider-img"
               src="https://via.placeholder.com/760x431"
-              alt="три смартфона с синими экранами"
+              alt="Слайд с тремя смартфонами"
             />
           </li>
-          <li>
-            <p>Любим математику как никто другой</p>
+          <li class="slider-item">
+            <p class="slider-title">Любим математику как никто другой</p>
             <p>
               Никакого креатива, только математические формулы
               <br />
               для расчета идеальных пропорций
             </p>
-            <a href="blank.html">Узнать больше</a>
+            <a class="button slider-button text-link" href="blank.html">Узнать больше</a>
             <!-- декоративное изображение -->
             <img
+              class="image slider-img"
               src="https://via.placeholder.com/760x431"
-              alt="два монитора с синими экранами"
+              alt="Слайд с двумя мониторами"
             />
           </li>
-          <li>
-            <p>Только ночь, только хардкор</p>
+          <li class="slider-item">
+            <p class="slider-title">Только ночь, только хардкор</p>
             <p>
               Работать днем, как все? Мы против этого.
               <br />
               Ближе к полуночи работа только начинается
             </p>
-            <a href="blank.html">Узнать больше</a>
+            <a class="button slider-button text-link" href="blank.html">Узнать больше</a>
             <!-- декоративное изображение -->
             <img
+              class="image slider-img"
               src="https://via.placeholder.com/760x431"
-              alt="планшет и смартфон с синими экранами"
+              alt="Слайд с планшетом и смартфоном"
             />
           </li>
         </ul>
-        <div>
-          <ul>
-            <li>
-              <button type="button">1</button>
+        <div class="slider-navigation">
+          <ul class="slider-navigation-list">
+            <li class="slider-navigation-item">
+              <button class="slider-navigation-button first-slider-button" type="button">1</button>
             </li>
-            <li>
-              <button type="button">2</button>
+            <li class="slider-navigation-item">
+              <button class="slider-navigation-button second-slider-button" type="button">2</button>
             </li>
-            <li>
-              <button type="button">3</button>
+            <li class="slider-navigation-item">
+              <button class="slider-navigation-button third-slider-button" type="button">3</button>
             </li>
           </ul>
         </div>
       </section>
       <!-- Раздел  со списком услуг компании-->
-      <section>
+      <section class="services">
         <h2>Услуги компании</h2>
         <!-- h2 не отображать на странице -->
-        <ul>
-          <li>
-            <h3>Веб-сайты</h3>
+        <ul class="services-list">
+          <li class="service-item">
+            <h3 class="service-title">Веб-сайты</h3>
             <!-- декоративное изображение -->
             <img
+              class="image service-img"
               src="https://via.placeholder.com/300x146"
               alt="ноутбук на красном фоне"
             />
@@ -118,13 +133,14 @@
               после того как увидит ваш сайт!
             </p>
             <div>
-              <button type="button">Заказать</button>
+              <button class="button order-button web-order-button" type="button">Заказать</button>
             </div>
           </li>
-          <li>
-            <h3>Приложения</h3>
+          <li class="service-item">
+            <h3 class="service-title">Приложения</h3>
             <!-- декоративное изображение -->
             <img
+              class="image service-img"
               src="https://via.placeholder.com/300x146"
               alt="два смартфона на зеленом фоне"
             />
@@ -134,13 +150,14 @@
               в AppStore и Google Play
             </p>
             <div>
-              <button type="button">Заказать</button>
+              <button class="button order-button app-order-button" type="button">Заказать</button>
             </div>
           </li>
-          <li>
-            <h3>Презентации</h3>
+          <li class="service-item">
+            <h3 class="service-title">Презентации</h3>
             <!-- декоративное изображение -->
             <img
+              class="image service-img"
               src="https://via.placeholder.com/300x146"
               alt="проекторная доска с презентацией на желтом фоне"
             />
@@ -150,125 +167,132 @@
               насколько вы изумительны
             </p>
             <div>
-              <button type="button">Заказать</button>
+              <button class="button order-button present-order-button" type="button">Заказать</button>
             </div>
           </li>
         </ul>
       </section>
       <!-- Раздел "О компании" -->
-      <section>
+      <section class="about-company">
         <h2>О компании</h2>
         <!-- h2 не отображать на странице -->
-        <div>
-          <p>Мы маленькая, но гордая дизайн-студия из Краснодара.</p>
+        <div class="about-company-info">
+          <p class="about-company-title">Мы маленькая, но гордая дизайн-студия из Краснодара.</p>
           <p>
             Исповедуем принципы минимализма и чистоты. Ставим математический
             расчет
             <br />
             превыше креатива. Работаем не покладая рук, как роботы.
           </p>
-          <h3>Выполняем заказы на разработку:</h3>
+          <h3 class="about-company-offer">Выполняем заказы на разработку:</h3>
           <ul>
             <li>Веб-сайтов любой сложности</li>
             <li>Мобильных приложений для iOS и Android</li>
             <li>Слайдшоу и видео для корпоративных презентаций</li>
           </ul>
         </div>
-        <div>
+        <div class=about-company-indicators>
           <img
+            class="image logo-img-color"
             src="img/logos/nerds_logo_color.png"
             width="360"
             height="208"
             alt="Цветной Логотип компании «Нёрдс»"
           />
-          <p>C 2004 года любим точность во всем:</p>
-          <ul>
-            <li>
-              <p>146%</p>
-              <p>Уровень самоотдачи</p>
+          <p class="about-company-stat">C 2004 года любим точность во всем:</p>
+          <ul class="indicators-list">
+            <li class="indicator-item">
+              <p class="indicator-percent">146<sup class="percent">%</sup></p>
+              <p class="indicator-description">Уровень самоотдачи</p>
             </li>
-            <li>
-              <p>100%</p>
-              <p>Соблюдение сроков</p>
+            <li class="indicator-item">
+              <p class="indicator-percent">100<sup class="percent">%</sup></p>
+              <p class="indicator-description">Соблюдение сроков</p>
             </li>
-            <li>
-              <p>50%</p>
-              <p>Минимальная предоплата</p>
+            <li class="indicator-item">
+              <p class="indicator-percent">50<sup class="percent">%</sup></p>
+              <p class="indicator-description">Минимальная предоплата</p>
             </li>
           </ul>
         </div>
       </section>
       <!-- Раздел "Клиенты" -->
-      <section>
+      <section class="clients">
         <h2>Наши клиенты</h2>
         <!-- h2 не отображать на странице -->
-        <ul>
+        <ul class="clients-list">
           <!-- Размер для всех логотипов взят из логотипа borodinski  -->
-          <li>
+          <li class="client-item">
             <a href="https://htmlacademy.ru/intensive/htmlcss">
               <img
-                src="img/logos/logo_htmlacademy.svg"
+                class="image client-logo"
+                src="img/logos/logo_htmlacademy.png"
                 width="209"
                 height="90"
-                alt="Логотип html academy"
+                alt="Логотип компании html academy"
               />
             </a>
           </li>
-          <li>
+          <li class="client-item">
             <a href="#">
               <img
+                class="image client-logo"
                 src="img/logos/logo_borodinski.png"
                 width="209"
                 height="90"
-                alt="Логотип borodinski"
+                alt="Логотип барбершопа borodinski"
               />
             </a>
           </li>
-          <li>
+          <li class="client-item">
             <a href="#">
               <img
+                class="image client-logo"
                 src="img/logos/logo_pink.png"
                 width="209"
                 height="90"
-                alt="Логотип pink"
+                alt="Логотип компании pink"
               />
             </a>
           </li>
-          <li>
+          <li class="client-item">
             <a href="#">
               <img
+                class="image client-logo"
                 src="img/logos/logo_mishka.png"
                 width="209"
                 height="90"
-                alt="Логотип mishka"
+                alt="Логотип компании mishka"
               />
             </a>
           </li>
         </ul>
       </section>
       <!-- Раздел "Контакты" -->
-      <section>
+      <section class="contacts">
         <h2>Контакты</h2>
         <!-- h2 не отображать на странице -->
         <!-- Здесь будет карта, пока изображение -->
-        <img src="img/map.png" width="1440" height="416" alt="Карта" />
-        <h3>NЁRDS DESIGN STUDIO</h3>
-        <p>наб. Реки Карповки, 5 лит П, Санкт-Петербург</p>
+        <img class="image map-img" src="img/map.png" width="1440" height="416" alt="Карта" />
+        <h3 class="contacts-title">NЁRDS DESIGN STUDIO</h3>
+        <p class="contacts-text">наб. Реки Карповки, 5 лит П, Санкт-Петербург</p>
         <p>
-          <a href="tel:+78005558628">+7 800 555-86-28</a>
+          <a class="contacts-phone text-link" href="tel:+78005558628">+7 800 555-86-28</a>
         </p>
-        <button type="button">Напишите нам</button>
+        <button class="button contacts-button" type="button">Напишите нам</button>
       </section>
     </main>
-    <footer>
+
+    <footer class="main-footer">
       <!-- Раздел "Ссылки на страницы в соцсетях"" -->
-      <section>
+      <section class="social-links">
         <h2>Соцсети</h2>
         <!-- h2 не отображать на странице -->
-        <ul>
-          <li>
+        <ul class="social-links-list">
+          <li class="social-links-item">
             <a href="#">
               <img
+                class="image social-logo"
                 src="img/logos/vk_icon.png"
                 width="26"
                 height="15"
@@ -276,9 +300,10 @@
               />
             </a>
           </li>
-          <li>
+          <li class="social-links-item">
             <a href="#">
               <img
+                class="image social-logo"
                 src="img/logos/fb_icon.png"
                 width="12"
                 height="22"
@@ -286,9 +311,10 @@
               />
             </a>
           </li>
-          <li>
+          <li class="social-links-item">
             <a href="#">
               <img
+                class="image social-logo"
                 src="img/logos/insta_icon.png"
                 width="21"
                 height="21"
@@ -298,44 +324,48 @@
           </li>
         </ul>
       </section>
-      <section>
-        <h3>Давайте дружить, это выгодно!</h3>
-        <p>Скидки 10% для друзей из социальных сетей</p>
+      <section class="friendship-offer">
+        <h3 class="friendship-title">Давайте дружить, это выгодно!</h3>
+        <p class="friendship-text">Скидки 10% для друзей из социальных сетей</p>
       </section>
     </footer>
-    <section>
-      <h3>Напишите нам</h3>
-      <form action="https://echo.htmlacademy.ru" method="post">
-        <div>
+
+    <section class="modal modal-send-mail">
+      <h3 class="modal-title">Напишите нам</h3>
+      <form class="modal-form" action="https://echo.htmlacademy.ru" method="post">
+        <div class="modal-item">
           <label for="id_name">Ваше имя:</label>
           <input
+            class="sender-username"
             id="id_name"
             type="text"
             name="name"
             placeholder="Имя Фамилия"
           />
         </div>
-        <div>
+        <div class="modal-item">
           <label for="id_email">Ваш email</label>
           <input
+            class="sender-email"
             id="id_email"
             type="email"
             name="email"
             placeholder="email@example.com"
           />
         </div>
-        <div>
+        <div class="modal-item">
           <label for="id_email_text">Текст письма:</label>
           <input
+            class="sender-text"
             id="id_email_text"
             type="text"
             name="email_text"
             placeholder="В свободной форме"
           />
         </div>
-        <button type="submit">Отправить</button>
+        <button class="button send-mail-button" type="submit">Отправить</button>
       </form>
-      <button type="button">Закрыть</button>
+      <button class="close-modal-button" type="button">Закрыть</button>
     </section>
   </body>
 </html>

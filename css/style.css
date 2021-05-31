@@ -1,0 +1,350 @@
+:root {
+    --basic-white: #FFFFFF;
+    --oppacity-white: #FFFFFF4d;
+    --basic-black: #000000;
+
+    --light-black: #283136;
+
+    --light-grey: #EEEEEE;
+    --middle-grey: #DFDFDF;
+    --deep-grey: #D5D5D5;
+    --stroke-grey: #DBDBDB;
+    --socials-grey: #E1E1E1;
+    --cart-grey: #A6A6A6;
+    --dark-grey-1: #666666;
+    --dark-grey-2: #444444;
+
+
+    --light-red: #FB565A;
+    --middle-red: #E74246;
+    --deep-red: #D7373B;
+
+    --light-green: #00CA74;
+    --middle-green: #00BC6C;
+    --deep-green: #00AA62;
+
+    --light-yellow: #EFC849;
+    --middle-yellow: #EAB534;
+    --deep-yellow: #E5A722;
+}
+
+.page-body {
+    min-width: 960px;
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", Arial, sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+    color: var(--basic-black);
+    text-transform: initial;
+    background-color: var(--basic-white);
+}
+
+.text-link {
+    text-decoration: none;
+    color: var(--basic-black);
+}
+
+.image {
+    max-width: 100%;
+    height: auto;
+}
+
+.client-logo {
+    opacity: 0.2;
+}
+
+.client-logo:hover,
+.client-logo:focus {
+    opacity: 1;
+}
+
+.client-logo:active {
+    opacity: 0.1;
+}
+
+.main-header,
+.features,
+.container-title {
+    background-color: var(--light-grey);
+}
+
+.main-navigation {
+    line-height: 30px;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.site-navigation,
+.slider-list,
+.slider-navigation-list,
+.services-list,
+.indicators-list,
+.clients-list,
+.social-links-list,
+.templ-navigation {
+    list-style: none;
+}
+
+.site-navigation .text-link:hover,
+.site-navigation .text-link:focus,
+.cart:hover,
+.cart:focus {
+    color: var(--light-red);
+}
+
+.site-navigation .text-link:active,
+.cart:active {
+    color: var(--basic-black);
+    opacity: 0.3;
+}
+
+.slider-title,
+.container-title {
+    font-size: 55px;
+    line-height: 55px;
+    font-weight: 500;
+}
+
+.button {
+    font-size: 16px;
+    line-height: 18px;
+    font-weight: 500;
+    text-align: center;
+    vertical-align: middle;
+    text-transform: uppercase;
+    color: var(--basic-white);
+    background-color: var(--light-red);
+    border: none;
+    cursor: pointer;
+}
+
+.slider-button {
+    padding-top: 17px;
+    padding-bottom: 15px;
+    padding-left: 54px;
+    padding-right: 54px;
+}
+
+.slider-button:hover,
+.slider-button:focus,
+.web-order-button:hover,
+.web-order-button:focus,
+.contacts-button:hover,
+.contacts-button:focus,
+.send-mail-button:hover,
+.send-mail-button:focus,
+.template-button:hover,
+.template-button:focus  {
+    background-color: var(--middle-red);
+}
+
+.slider-button:active,
+.web-order-button:active,
+.contacts-button:active,
+.send-mail-button:active {
+    background-color: var(--deep-red);
+    color: var(--oppacity-white);
+}
+
+.template-button:active {
+    background-color: var(--deep-red);
+}
+
+.app-order-button:hover,
+.app-order-button:focus {
+    background-color: var(--middle-green);
+}
+
+.app-order-button:active {
+    background-color: var(--deep-green);
+    color: var(--oppacity-white);
+}
+
+.present-order-button:hover,
+.present-order-button:focus {
+    background-color: var(--middle-yellow);
+}
+
+.present-order-button:active {
+    background-color: var(--deep-yellow);
+    color: var(--oppacity-white);
+}
+
+.service-title {
+    font-size: 24px;
+    line-height: 30px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.order-button {
+    height: 50px;
+    width: 160px;
+}
+
+.app-order-button {
+    background-color: var(--light-green);
+}
+
+.present-order-button {
+    background-color: var(--light-yellow);
+}
+
+.about-company-title {
+    font-size: 45px;
+    line-height: 45px;
+    font-weight: 500;
+}
+
+.about-company-offer,
+.about-company-stat {
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.indicator-percent {
+    font-size: 45px;
+    line-height: 64px;
+    font-weight: bold;
+}
+
+.persent {
+    font-size: 26px;
+    line-height: 40px;
+}
+
+.indicator-description {
+    line-height: 18px;
+}
+
+.contacts-title {
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: bold;
+}
+
+.contacts-text,
+.contacts-phone {
+    line-height: 18px;
+    color: var(--dark-grey);
+}
+
+
+
+.contacts-button,
+.send-mail-button {
+    line-height: 18px;
+    height: 50px;
+    width: 219px;
+}
+
+.friendship-title {
+    font-size: 36px;
+    line-height: 36px;
+    font-weight: bold;
+}
+
+.friendship-text {
+    line-height: 22px;
+    color: var(--dark-grey-2);
+}
+
+.modal-title {
+    font-size: 45px;
+    line-height: 53px;
+    font-weight: bold;
+}
+
+.modal-item {
+    font-size: 16px;
+    line-height: 18px;
+    font-weight: bold;
+}
+
+.sender-username,
+.sender-email {
+    height: 50px;
+    width: 360px;
+}
+
+.sender-text {
+    height: 118px;
+    width: 760px;
+}
+
+.filter-title,
+.template-title,
+.sort-title {
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.filter-grid-label,
+.filter-specility-label {
+    line-height: 20px;
+    color: var(--light-black);
+}
+
+.price-option {
+    font-size: 16px;
+    line-height: 22px;
+}
+
+.filter-result-button {
+    height: 50px;
+    width: 260px;
+    background-color: var(--light-grey);
+    color: var(--basic-black);
+}
+
+.filter-result-button:hover,
+.filter-result-button:focus {
+    background-color: var(--middle-grey);
+}
+
+.filter-result-button:active {
+    background-color: var(--deep-grey);
+    color: var(--oppacity-white);
+}
+
+.sort-position-option {
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: normal;
+    text-transform: uppercase;
+}
+
+.template-content {
+    background-color: var(--light-grey);
+    text-align: center;
+}
+
+.template-button {
+    height: 50px;
+    width: 200px;
+}
+
+.template-text {
+    font-size: 16px;
+    line-height: 18px;
+    font-weight: normal;
+    color: var(--dark-grey-1);
+}
+
+.templ-navigation-item {
+    font-size: 16px;
+    line-height: 18px;
+    font-weight: 500;
+    background-color: var(--light-grey);
+}
+
+.filter-price,
+.filter,
+.sort
+ {
+    border: none;
+}
