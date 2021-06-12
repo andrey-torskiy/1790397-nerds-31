@@ -26,10 +26,21 @@
     --light-yellow: #EFC849;
     --middle-yellow: #EAB534;
     --deep-yellow: #E5A722;
+
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.page {
+    min-height: 100%;
 }
 
 .page-body {
-    min-width: 960px;
+    min-height: 100%;
     margin: 0;
     padding: 0;
     font-family: "Roboto", Arial, sans-serif;
@@ -74,6 +85,9 @@
     line-height: 30px;
     font-weight: 500;
     text-transform: uppercase;
+
+    display: grid;
+    grid-template-columns: 160px 1fr min-content;
 }
 
 .site-navigation,
@@ -202,7 +216,10 @@
 .about-company-stat {
     font-weight: bold;
     text-transform: uppercase;
+    font-size: 16px;
+    line-height: 24px;
 }
+
 
 .indicator-percent {
     font-size: 45px;
@@ -210,7 +227,7 @@
     font-weight: bold;
 }
 
-.persent {
+.percent {
     font-size: 26px;
     line-height: 40px;
 }
@@ -345,6 +362,342 @@
 .filter-price,
 .filter,
 .sort
- {
+{
     border: none;
 }
+
+
+/* 
+    display
+*/
+
+.page-body {
+    display: grid;
+    grid-template-rows: min-content 1fr min-content;
+    align-content: start;
+}
+
+.center {
+    padding-left: calc(50vw - 580px);
+    padding-right: calc(50vw - 580px);
+}
+
+.main-navigation {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 49px;
+}
+
+.site-navigation {
+    width: 437px;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.main-header-logo,
+.site-navigation-item .text-link,
+.cart {
+    padding: 0;
+    margin: 0;
+}
+
+
+.container {
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-rows: repeat(5, min-content);
+}
+
+.slider-wrapper {
+    position: relative;
+}
+
+.slider-navigation {
+    position: absolute;
+    bottom: 96px;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
+.slider-list {
+    margin: 0;
+    padding: 0;
+}
+
+.slider {
+    padding: 0;
+    width: 1200px;
+    height: 431px;
+    margin-left: 140px;
+    margin-right: 140px;
+    padding-top: 78px;
+    position: relative;
+}
+
+.slider-text {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.slider-img {
+    width: 760px;
+    height: 431px;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.slider-title {
+    margin: 0;
+    padding: 0;
+    width: 538px;
+    margin-bottom: 25px;
+    z-index: 2;
+}
+
+.slider-content {
+    margin: 0;
+    padding: 0;
+    margin-bottom: 55px;
+}
+
+
+.slider-navigation-list {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+}
+
+.services-list {
+    margin: 0;
+    padding: 0;
+    margin-top: 100px;
+    margin-left: 140px;
+    margin-right: 140px; 
+    display: grid;
+    grid-template-columns: repeat(3, 300px);
+    column-gap: 100px;
+}
+
+.service-item {
+    display: flex;
+    flex-direction: column;
+}
+
+.service-img {
+    order: -1;
+    width: 300px;
+    height: 146;
+    margin-bottom: 25px;
+}
+
+.service-title {
+    margin: 0;
+    padding: 0;
+    margin-bottom: 16px;
+}
+
+.service-content {
+    margin: 0;
+    padding: 0;
+    width: 260px;
+    margin-bottom: 32px;
+}
+
+.about-company {
+    padding: 0;
+    margin-top: 121px;
+    margin-left: 140px;
+    margin-right: 140px; 
+    margin-bottom: 73px;
+    display: grid;
+    grid-template-columns: 800px 360px;
+}
+
+.about-company-info {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.about-company-title {
+    margin: 0;
+    padding: 0;
+    margin-top: 34px;
+    margin-bottom: 32px;
+    width: 651px;
+}
+
+.about-company-content {
+    margin: 0;
+    padding: 0;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-bottom: 37px;
+    width: 646px;
+}
+
+.about-company-offer {
+    margin: 0;
+    padding: 0;
+    margin-bottom: 23px;
+}
+
+.offer-items-list {
+    margin: 0;
+    padding: 0;
+    margin-left: 31px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.offer-item:not(:last-child) {
+    margin-bottom: 22px;
+}
+
+.about-company-stat {
+    margin: 0;
+    margin-top: 37px;
+    margin-bottom: 31px;
+    text-align: center;
+}
+
+.indicators-list {
+    margin: 0;
+    padding: 0;
+    width: 360px;
+    display: flex;
+    flex-direction: row;
+}
+
+.indicator-item:not(:last-child) {
+    margin-right: 21px;
+}
+
+.indicator-percent {
+    margin: 0;
+    padding: 0;
+    margin-bottom: 11px;
+}
+
+.indicator-description {
+    margin: 0;
+    padding: 0;
+}
+
+.clients {
+    margin-bottom: 80px;
+}
+
+.clients-list {
+    margin: 0;
+    padding: 0;
+    width: 1160px;
+    margin-left: 140px;
+    margin-right: 140px; 
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.contacts-content {
+    margin: 0;
+    padding: 0;
+    width: 319px;
+    height: 308px;
+    margin-left: 140px;
+    padding-left: 50px;
+}
+
+.contacts-title {
+    margin: 0;
+    padding: 0;
+    margin-bottom: 23px;
+    margin-top: 51px;
+}
+
+.contacts-text {
+    margin: 0;
+    padding: 0;
+    width: 230px;
+}
+
+.contacts-phone-wrapper {
+    margin: 0;
+    padding: 0;
+    margin-top: 16px;
+}
+
+.contacts-button {
+    margin: 0;
+    padding: 0;
+    margin-top: 37px;
+}
+
+.main-footer {
+    padding: 0;
+    margin: 0;
+    width: 1160px;
+    margin-left: 140px;
+    margin-right: 140px;
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    align-items: center;
+}
+
+.social-links-list {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+}
+
+.friendship-title {
+    margin: 0;
+    padding: 0;
+    margin-bottom: 10px;
+}
+
+.friendship-text {
+    margin: 0;
+    padding: 0;
+}
+
+/*
+    Прячем заголовки, которых 
+    не должно быть на странице
+*/
+
+.container-title {
+    display: none;
+}
+
+/* 
+Свойство для подстветки grid-ячеек
+По завершении проекта - удалить
+*/
+
+
+
+.mark-grid-item-green {
+    outline: 5px solid rgba(0, 255, 0, 0.7);
+    outline-offset: -5px;
+}
+
+
+.mark-grid-item-red {
+    outline: 5px solid rgba(255, 0, 0, 0.7);
+    outline-offset: -5px;
+}
+
