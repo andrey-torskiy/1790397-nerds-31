@@ -47,11 +47,11 @@
     </header>
 
     <main class="container">
-      <h1 class="container-title">Дизайнерская компания «Нёрдс»</h1>
+      <h1 class="container-title hide">Дизайнерская компания «Нёрдс»</h1>
       <!-- h1 не отображать на странице -->
       <!-- Раздел со слайдами об особенностях компании -->
       <section class="features center">
-        <h2 class="container-title">Особенности компании</h2>
+        <h2 class="container-title hide">Особенности компании</h2>
         <!-- h2 не отображать на странице -->
         <div class="slider-wrapper">
           <ul class="slider-list">
@@ -75,7 +75,7 @@
                 />
               </div>
             </li>
-            <!--
+
             <li class="slider-item">
               <div class="slider">
                 <div class="slider-text">
@@ -96,10 +96,11 @@
                 </div>
               </div>
             </li>
+
             <li class="slider-item">
               <div class="slider">
                 <div class="slider-text">
-                  <p class="slider-title">Только ночь, только хардкор</p>
+                  <p class="slider-title">Только ночь, <br> только хардкор</p>
                   <p class="slider-content">
                     Работать днем, как все? Мы против этого.
                     <br />
@@ -116,7 +117,7 @@
                 />
               </div>
             </li>
-            -->
+
           </ul>
           <div class="slider-navigation">
             <ul class="slider-navigation-list">
@@ -134,8 +135,8 @@
         </div>
       </section>
       <!-- Раздел  со списком услуг компании-->
-      <section class="services">
-        <h2 class="container-title">Услуги компании</h2>
+      <section class="services center">
+        <h2 class="container-title hide">Услуги компании</h2>
         <!-- h2 не отображать на странице -->
         <ul class="services-list">
           <li class="service-item">
@@ -186,8 +187,8 @@
         </ul>
       </section>
       <!-- Раздел "О компании" -->
-      <section class="about-company">
-        <h2 class="container-title">О компании</h2>
+      <section class="about-company center">
+        <h2 class="container-title hide">О компании</h2>
         <!-- h2 не отображать на странице -->
         <div class="about-company-info">
           <p class="about-company-title">Мы — маленькая, но гордая дизайн-студия из Краснодара.</p>
@@ -202,7 +203,7 @@
             <li class="offer-item">Слайдшоу и видео для корпоративных презентаций</li>
           </ul>
         </div>
-        <div class=about-company-indicators>
+        <div class="about-company-indicators">
           <img
             class="image logo-img-color"
             src="img/logos/nerds_logo_color.png"
@@ -228,8 +229,8 @@
         </div>
       </section>
       <!-- Раздел "Клиенты" -->
-      <section class="clients">
-        <h2 class="container-title">Наши клиенты</h2>
+      <section class="clients center">
+        <h2 class="container-title hide">Наши клиенты</h2>
         <!-- h2 не отображать на странице -->
         <ul class="clients-list">
           <!-- Размер для всех логотипов взят из логотипа borodinski  -->
@@ -280,8 +281,8 @@
         </ul>
       </section>
       <!-- Раздел "Контакты" -->
-      <section class="contacts">
-        <h2 class="container-title">Контакты</h2>
+      <section class="contacts center-map">
+        <h2 class="container-title hide">Контакты</h2>
         <!-- h2 не отображать на странице -->
         <!-- Здесь будет карта, пока изображение -->
         <img class="image map-img" src="img/map.png" width="1440" height="416" alt="Карта" />
@@ -296,10 +297,10 @@
       </section>
     </main>
 
-    <footer class="main-footer mark-grid-item-green">
+    <footer class="main-footer mark-grid-item-green center">
       <!-- Раздел "Ссылки на страницы в соцсетях"" -->
       <section class="social-links">
-        <h2 class="container-title">Соцсети</h2>
+        <h2 class="container-title hide">Соцсети</h2>
         <!-- h2 не отображать на странице -->
         <ul class="social-links-list mark-grid-item-green">
           <li class="social-links-item mark-grid-item-red">
@@ -342,11 +343,11 @@
         <p class="friendship-text">Скидки 10% для друзей из социальных сетей</p>
       </section>
     </footer>
-
+    
     <section class="modal modal-send-mail">
       <h3 class="modal-title">Напишите нам</h3>
       <form class="modal-form" action="https://echo.htmlacademy.ru" method="post">
-        <div class="modal-item">
+        <div class="modal-item modal-item-name">
           <label for="id_name">Ваше имя:</label>
           <input
             class="sender-username"
@@ -356,7 +357,7 @@
             placeholder="Имя Фамилия"
           />
         </div>
-        <div class="modal-item">
+        <div class="modal-item modal-item-email">
           <label for="id_email">Ваш email</label>
           <input
             class="sender-email"
@@ -366,7 +367,7 @@
             placeholder="email@example.com"
           />
         </div>
-        <div class="modal-item">
+        <div class="modal-item modal-item-text">
           <label for="id_email_text">Текст письма:</label>
           <input
             class="sender-text"
@@ -378,7 +379,7 @@
         </div>
         <button class="button send-mail-button" type="submit">Отправить</button>
       </form>
-      <button class="close-modal-button" type="button">Закрыть</button>
+      <button class="close-modal-button" type="button">X</button>
     </section>
   </body>
 </html>

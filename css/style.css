@@ -35,6 +35,16 @@
     box-sizing: border-box;
 }
 
+.center {
+    padding-left: calc(50vw - 580px);
+    padding-right: calc(50vw - 580px);
+}
+
+.center-map {
+    padding-left: calc(50vw - 720px);
+    padding-right: calc(50vw - 720px);
+}
+
 .page {
     min-height: 100%;
 }
@@ -220,7 +230,6 @@
     line-height: 24px;
 }
 
-
 .indicator-percent {
     font-size: 45px;
     line-height: 64px;
@@ -247,8 +256,6 @@
     line-height: 18px;
     color: var(--dark-grey);
 }
-
-
 
 .contacts-button,
 .send-mail-button {
@@ -377,11 +384,6 @@
     align-content: start;
 }
 
-.center {
-    padding-left: calc(50vw - 580px);
-    padding-right: calc(50vw - 580px);
-}
-
 .main-navigation {
     display: flex;
     flex-direction: row;
@@ -391,25 +393,17 @@
 }
 
 .site-navigation {
-    width: 437px;
-    margin: 0;
-    padding: 0;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 }
 
-.main-header-logo,
-.site-navigation-item .text-link,
-.cart {
-    padding: 0;
-    margin: 0;
+.site-navigation-item {
+    margin-left: 22px;
+    margin-right: 22px;
 }
 
-
 .container {
-    margin: 0;
-    padding: 0;
     display: grid;
     grid-template-rows: repeat(5, min-content);
 }
@@ -422,27 +416,18 @@
     position: absolute;
     bottom: 96px;
     left: 50%;
-    transform: translate(-50%, 0);
+    transform: translate(-50%);
 }
 
-.slider-list {
-    margin: 0;
-    padding: 0;
-}
 
 .slider {
-    padding: 0;
-    width: 1200px;
+    width: 100%;
     height: 431px;
-    margin-left: 140px;
-    margin-right: 140px;
     padding-top: 78px;
     position: relative;
 }
 
 .slider-text {
-    margin: 0;
-    padding: 0;
     display: flex;
     flex-direction: column;
 }
@@ -456,33 +441,23 @@
 }
 
 .slider-title {
-    margin: 0;
-    padding: 0;
     width: 538px;
     margin-bottom: 25px;
     z-index: 2;
 }
 
 .slider-content {
-    margin: 0;
-    padding: 0;
     margin-bottom: 55px;
 }
 
 
 .slider-navigation-list {
-    margin: 0;
-    padding: 0;
     display: flex;
     flex-direction: row;
 }
 
 .services-list {
-    margin: 0;
-    padding: 0;
     margin-top: 100px;
-    margin-left: 140px;
-    margin-right: 140px; 
     display: grid;
     grid-template-columns: repeat(3, 300px);
     column-gap: 100px;
@@ -514,33 +489,24 @@
 }
 
 .about-company {
-    padding: 0;
     margin-top: 121px;
-    margin-left: 140px;
-    margin-right: 140px; 
     margin-bottom: 73px;
     display: grid;
-    grid-template-columns: 800px 360px;
+    grid-template-columns: 1fr 360px;
 }
 
 .about-company-info {
-    padding: 0;
-    margin: 0;
     display: flex;
     flex-direction: column;
 }
 
 .about-company-title {
-    margin: 0;
-    padding: 0;
     margin-top: 34px;
     margin-bottom: 32px;
     width: 651px;
 }
 
 .about-company-content {
-    margin: 0;
-    padding: 0;
     padding-top: 5px;
     padding-bottom: 5px;
     margin-bottom: 37px;
@@ -548,14 +514,10 @@
 }
 
 .about-company-offer {
-    margin: 0;
-    padding: 0;
     margin-bottom: 23px;
 }
 
 .offer-items-list {
-    margin: 0;
-    padding: 0;
     margin-left: 31px;
     padding-left: 5px;
     padding-right: 5px;
@@ -566,16 +528,13 @@
 }
 
 .about-company-stat {
-    margin: 0;
     margin-top: 37px;
     margin-bottom: 31px;
     text-align: center;
 }
 
+
 .indicators-list {
-    margin: 0;
-    padding: 0;
-    width: 360px;
     display: flex;
     flex-direction: row;
 }
@@ -585,14 +544,7 @@
 }
 
 .indicator-percent {
-    margin: 0;
-    padding: 0;
     margin-bottom: 11px;
-}
-
-.indicator-description {
-    margin: 0;
-    padding: 0;
 }
 
 .clients {
@@ -600,11 +552,6 @@
 }
 
 .clients-list {
-    margin: 0;
-    padding: 0;
-    width: 1160px;
-    margin-left: 140px;
-    margin-right: 140px; 
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -612,74 +559,287 @@
 }
 
 .contacts-content {
-    margin: 0;
-    padding: 0;
     width: 319px;
     height: 308px;
-    margin-left: 140px;
     padding-left: 50px;
 }
 
 .contacts-title {
-    margin: 0;
-    padding: 0;
     margin-bottom: 23px;
     margin-top: 51px;
 }
 
 .contacts-text {
-    margin: 0;
-    padding: 0;
     width: 230px;
 }
 
 .contacts-phone-wrapper {
-    margin: 0;
-    padding: 0;
     margin-top: 16px;
 }
 
 .contacts-button {
-    margin: 0;
-    padding: 0;
     margin-top: 37px;
 }
 
 .main-footer {
-    padding: 0;
-    margin: 0;
-    width: 1160px;
-    margin-left: 140px;
-    margin-right: 140px;
     display: grid;
     grid-template-columns: 300px 1fr;
     align-items: center;
 }
 
 .social-links-list {
-    margin: 0;
-    padding: 0;
     display: flex;
     flex-direction: row;
 }
 
 .friendship-title {
-    margin: 0;
-    padding: 0;
     margin-bottom: 10px;
 }
 
-.friendship-text {
+
+/*
+    Модальное окно
+*/
+
+.modal-send-mail {
+    display: flex;
+    flex-direction: column;
+    width: 960px;
+    height: 590px;
+    border: solid 2px black;
+    margin: 0 auto;
+    position: relative;
+}
+
+.modal-title {
+    margin-top: 63px;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-bottom: 37px;
+}
+
+.modal-form {
+    margin-left: 100px;
+    margin-right: 100px;
+    display: grid;
+    grid-template-areas: "name email"
+                         "text-area text-area"
+                         "button button";
+}
+
+.modal-item-name {
+    grid-area: name;
+    width: 360px; 
+}
+
+.modal-item-email {
+    grid-area: email;
+    width: 360px;
+    margin-left: 40px;
+}
+
+.modal-item-text {
+    grid-area: text-area;
+    width: 760px;
+    margin-top: 34px;
+}
+
+.send-mail-button {
+    grid-area: button;
+    margin-top: 47px;
+    width: 259px;
+}
+
+.sender-username,
+.sender-email,
+.sender-text {
+    display: block;
+    margin-top: 9px;
+    padding-top: 16px;
+    padding-left: 16px;
+}
+
+.sender-username,
+.sender-email {
+    height: 50px;
+    padding-bottom: 16px;
+}
+
+.sender-text {
+    height: 118px;
+    padding-bottom: 84px;
+}
+
+.close-modal-button {
+    width: 21px;
+    height: 21px;
+    position: absolute;
+    top: 78px;
+    right: 90px;
+}
+
+/*
+    Раздел "Магазин"
+*/
+
+.page-catalog {
+    display: grid;
+    grid-template-rows: min-content 1fr min-content;
+}
+
+.page-catalog-wrapper {
+    display: grid;
+    grid-template-areas: "filter sorting"
+                         "filter templates";
+}
+
+.shop-title {
+    text-align: center;
+    margin: 0;
+    padding-top: 78px;
+    padding-bottom: 108px;
+    margin-bottom: 55px;
+}
+
+.filter {
+    grid-area: filter;
+    width: 260px;
+    margin-right: 140px;
+}
+
+.filter-price,
+.filter-grid,
+.filter-speciality {
     margin: 0;
     padding: 0;
 }
+
+.filter-grid {
+    margin-top: 54px;
+}
+
+.filter-title {
+    margin-bottom: 16px;
+}
+
+.filter-grid-option:not(:last-child),
+.filter-speciality-option:not(:last-child) {
+    margin-bottom: 20px;
+}
+
+.filter-speciality {
+    margin-top: 43px;
+}
+
+.filter-result-button {
+    margin-top: 48px;
+}
+
+.templates-sort {
+    grid-area: sorting;
+    margin-bottom: 48px;
+}
+
+.templates {
+    grid-area: templates;
+}
+
+.template-item {
+    margin-bottom: 31px;
+}
+
+.sort-form,
+.sort {
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+    padding: 0;
+}
+
+.sort-title {
+    float: left;
+    margin-right: 20px;
+}
+
+.sort-position-option,
+.sort-directions {
+    align-self: center;
+}
+
+.sort-position-button,
+.sort-direction-button {
+    visibility: hidden;
+}
+
+.templates-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.template-item {
+    display: grid;
+    grid-template-rows: min-content 578px;
+    position: relative;
+}
+
+.template-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 360px;
+    height: 231px;
+    position: absolute;
+    bottom: 0;
+}
+
+.template-link {
+    margin-top: 26px;
+    margin-bottom: 12px; 
+}
+
+.template-text {
+    margin-bottom: 32px;
+    width: 255px;
+}
+
+.templ-navigation {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    margin-top: 24px;
+    height: 50px;
+    align-content: center;
+}
+
+.templ-navigation-item:not(:first-child) {
+    margin-left: 11px;
+}
+
+.templ-navigation-item {
+    padding-top: 17px;
+    text-align: center;
+}
+
+.templ-navigation-item:not(:first-child):not(:last-child) {
+    width: 50px;
+}
+
+.templ-navigation-prev,
+.templ-navigation-next {
+    width: 260px;
+}
+
+
+
+
 
 /*
     Прячем заголовки, которых 
     не должно быть на странице
 */
 
-.container-title {
+.hide {
     display: none;
 }
 
