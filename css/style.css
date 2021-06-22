@@ -34,8 +34,8 @@
 }
 
 * {
-    padding: 0;
     margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
 
@@ -55,11 +55,9 @@
 
 .page-body {
     min-height: 100%;
-    margin: 0;
-    padding: 0;
     font-family: "Roboto", Arial, sans-serif;
     font-size: 16px;
-    line-height: 24px;
+    line-height: 1.5;
     font-weight: 400;
     color: var(--basic-black);
     text-transform: initial;
@@ -140,7 +138,7 @@
 .slider-title,
 .container-title {
     font-size: 55px;
-    line-height: 55px;
+    line-height: 1;
     font-weight: 500;
 }
 
@@ -464,7 +462,6 @@
 
 .main-navigation {
     display: flex;
-    flex-direction: row;
     align-items: center;
     justify-content: space-between;
     margin-top: 49px;
@@ -473,7 +470,6 @@
 .site-navigation {
     display: flex;
     flex-wrap: wrap;
-    flex-direction: row;
     justify-content: space-between;
 }
 
@@ -630,14 +626,10 @@
 }
 
 .service-title {
-    margin: 0;
-    padding: 0;
     margin-bottom: 16px;
 }
 
 .service-content {
-    margin: 0;
-    padding: 0;
     width: 260px;
     margin-bottom: 32px;
 }
@@ -690,7 +682,6 @@
 
 .indicators-list {
     display: flex;
-    flex-direction: row;
 }
 
 .indicator-item:not(:last-child) {
@@ -726,7 +717,6 @@
 
 .clients-list {
     display: flex;
-    flex-direction: row;
     align-items: center;
     justify-content: space-around;
 }
@@ -784,7 +774,6 @@
 .social-links-list {
     display: flex;
     flex-wrap: wrap;
-    flex-direction: row;
     justify-content: space-between;
 }
 
@@ -932,12 +921,6 @@
     margin-right: 140px;
 }
 
-.filter-price,
-.filter-grid,
-.filter-speciality {
-    margin: 0;
-    padding: 0;
-}
 
 .filter-grid {
     margin-top: 54px;
@@ -979,7 +962,6 @@
     box-sizing: content-box;
     width: 4px;
     height: 4px;
-    padding: 0;
     border: 8px solid var(--basic-white);
     border-radius: 50%;
     background-color: var(--toggle-grey);
@@ -1050,7 +1032,6 @@
 .sort-form,
 .sort {
     display: flex;
-    flex-direction: row;
     margin: 0;
     padding: 0;
 }
@@ -1158,7 +1139,6 @@
     height: 1px;
     margin: -1px;
     border: 0;
-    padding: 0;
     white-space: nowrap;
     clip-path: inset(100%);
     clip: rect(0 0 0 0);
