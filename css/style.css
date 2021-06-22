@@ -152,14 +152,12 @@
     color: var(--basic-white);
     background-color: var(--light-red);
     border: none;
+    border-radius: 3px;
     cursor: pointer;
 }
 
 .slider-button {
-    padding-top: 17px;
-    padding-bottom: 15px;
-    padding-left: 54px;
-    padding-right: 54px;
+    padding: 17px 54px 15px;
 }
 
 .slider-button:hover,
@@ -436,10 +434,18 @@
 }
 
 .templ-navigation-item {
+    display: block;
+    height: 50px;
     font-size: 16px;
     line-height: 18px;
     font-weight: 500;
     background-color: var(--light-grey);
+    border-radius: 3px;
+}
+
+.templ-navigation-active {
+    background-color: var(--basic-white);
+    border: 3px solid var(--stroke-grey);
 }
 
 .filter-price,
@@ -480,15 +486,12 @@
 
 .site-navigation .text-link {
     display: block;
-    padding-top: 15px;
-    padding-bottom: 15px;
+    padding: 15px 0;
 }
 
 .cart {
     display: block;
-    padding-top: 15px;
-    padding-bottom: 15px;
-    padding-left: 40px;
+    padding: 15px 0 15px 40px;
     position: relative;
 }
 
@@ -653,8 +656,7 @@
 }
 
 .about-company-content {
-    padding-top: 5px;
-    padding-bottom: 5px;
+    padding: 5px 0;
     margin-bottom: 37px;
     width: 646px;
 }
@@ -665,8 +667,7 @@
 
 .offer-items-list {
     margin-left: 31px;
-    padding-left: 5px;
-    padding-right: 5px;
+    padding: 0 5px;
 }
 
 .offer-item:not(:last-child) {
@@ -824,15 +825,11 @@
 }
 
 .modal-title {
-    margin-top: 63px;
-    margin-left: 100px;
-    margin-right: 100px;
-    margin-bottom: 37px;
+    margin: 63px 100px 37px;
 }
 
 .modal-form {
-    margin-left: 100px;
-    margin-right: 100px;
+    margin: 0 100px;
     display: grid;
     grid-template-areas: "name email"
                          "text-area text-area"
@@ -867,9 +864,7 @@
 .sender-text {
     display: block;
     margin-top: 9px;
-    padding-top: 16px;
-    padding-left: 16px;
-    padding-right: 16px;
+    padding: 16px 16px 0;
 }
 
 .sender-username,
@@ -910,9 +905,10 @@
 .shop-title {
     text-align: center;
     margin: 0;
+    margin-bottom: 55px;
     padding-top: 78px;
     padding-bottom: 108px;
-    margin-bottom: 55px;
+    
 }
 
 .filter {
@@ -998,7 +994,7 @@
     left: 160px;
 }
 
-.filter-grid-option:not(:last-child),
+
 .filter-speciality-option:not(:last-child) {
     margin-bottom: 20px;
 }
@@ -1009,7 +1005,7 @@
 }
 
 .filter-speciality {
-    margin-top: 43px;
+    margin-top: 20px;
 }
 
 .filter-result-button {
@@ -1023,10 +1019,6 @@
 
 .templates {
     grid-area: templates;
-}
-
-.template-item {
-    margin-bottom: 31px;
 }
 
 .sort-form,
@@ -1057,7 +1049,9 @@
     justify-content: space-between;
 }
 
+
 .template-item {
+    margin-bottom: 31px;
     display: grid;
     grid-template-rows: min-content 578px;
     position: relative;
@@ -1067,6 +1061,9 @@
     opacity: 0.1;
 }
 
+.template-img {
+    z-index: 1;
+}
 
 .template-content {
     display: flex;
@@ -1076,7 +1073,17 @@
     height: 231px;
     position: absolute;
     bottom: 0;
+    z-index: 0;
 }
+
+.template-item:hover .template-browser-img {
+    opacity: 1;
+}
+
+.template-item:hover .template-content {
+    z-index: 2;
+}
+
 
 .template-link {
     margin-top: 26px;
