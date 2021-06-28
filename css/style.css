@@ -76,14 +76,18 @@
     height: auto;
 }
 
+.client-item:focus-within .client-logo {
+    opacity: 1;
+}
+
 .client-logo {
     opacity: 0.2;
 }
 
-.client-logo:hover,
-.client-logo:focus {
+.client-logo:hover {
     opacity: 1;
 }
+
 
 .client-logo:active {
     opacity: 0.1;
@@ -145,9 +149,12 @@
 }
 
 .button {
+    box-sizing: content-box;
     font-size: 16px;
     line-height: 18px;
     font-weight: 500;
+    min-height: 40px;
+    padding: 5px;
     text-align: center;
     vertical-align: middle;
     text-transform: uppercase;
@@ -158,8 +165,16 @@
     cursor: pointer;
 }
 
+.slider-button-wrapper {
+    width: 230px;
+}
+
 .slider-button {
-    padding: 17px 54px 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
 }
 
 .slider-button:hover,
@@ -215,8 +230,7 @@
 }
 
 .order-button {
-    height: 50px;
-    width: 160px;
+    width: 150px;
 }
 
 .app-order-button {
@@ -270,9 +284,7 @@
 
 .contacts-button,
 .send-mail-button {
-    line-height: 18px;
-    height: 50px;
-    width: 219px;
+    width: 209px;
 }
 
 .friendship-title {
@@ -335,8 +347,8 @@
     position: absolute;
     left: -36px;
     top: 50%;
-    width: 20px;
-    height: 20px;
+    width: 17px;
+    height: 17px;
     border: 4px solid var(--grey-radio-simple);
     border-radius: 50%;
     opacity: 0.4;
@@ -348,8 +360,8 @@
     position: absolute;
     left: -28px;
     top: 50%;
-    width: 12px;
-    height: 12px;
+    width: 9px;
+    height: 9px;
     background-color: var(--grey-radio-simple);
     border-radius: 50%;
     opacity: 0.4;
@@ -370,7 +382,7 @@
     content: "";
     position: absolute;
     left: -36px;
-    top: 0;
+    top: -2px;
     width: 23px;
     height: 23px;
     background-image: url("../img/decoration/checkbox-off.svg");
@@ -383,7 +395,7 @@
     content: "";
     position: absolute;
     left: -36px;
-    top: 0;
+    top: -2px;
     width: 23px;
     height: 23px;
     background-image: url("../img/decoration/checkbox-on.svg");
@@ -398,8 +410,7 @@
 }
 
 .filter-result-button {
-    height: 50px;
-    width: 260px;
+    width: 250px;
     background-color: var(--light-grey);
     color: var(--basic-black);
 }
@@ -427,8 +438,8 @@
 }
 
 .template-button {
-    height: 50px;
     width: 200px;
+    margin-bottom: 44px;
 }
 
 .template-text {
@@ -442,9 +453,7 @@
     display: flex;
     align-content: center;
     justify-content: center;
-    height: 50px;
-    font-size: 16px;
-    line-height: 18px;
+    min-height: 34px;
     font-weight: 500;
     background-color: var(--light-grey);
     border-radius: 3px;
@@ -481,6 +490,7 @@
     align-items: center;
     justify-content: space-between;
     margin-top: 49px;
+    margin-bottom: -10px;
 }
 
 .site-navigation {
@@ -495,6 +505,7 @@
 }
 
 .site-navigation .text-link {
+    font-style: normal;
     display: block;
     padding: 15px 0;
 }
@@ -558,7 +569,7 @@
 .slider {
     width: 100%;
     height: 431px;
-    padding-top: 78px;
+    padding-top: 76px;
     position: relative;
 }
 
@@ -582,7 +593,7 @@
 }
 
 .slider-content {
-    margin-bottom: 55px;
+    margin-bottom: 38px;
 }
 
 .slide-current {
@@ -634,7 +645,7 @@
 }
 
 .services-list {
-    margin-top: 100px;
+    margin-top: 80px;
     display: grid;
     grid-template-columns: repeat(3, 300px);
     column-gap: 100px;
@@ -674,19 +685,19 @@
 }
 
 .about-company-title {
-    margin-top: 34px;
-    margin-bottom: 32px;
+    margin-top: 32px;
+    margin-bottom: 28px;
     width: 651px;
 }
 
 .about-company-content {
     padding: 5px 0;
-    margin-bottom: 37px;
+    margin-bottom: 36px;
     width: 646px;
 }
 
 .about-company-offer {
-    margin-bottom: 23px;
+    margin-bottom: 22px;
 }
 
 .offer-items-list {
@@ -695,12 +706,30 @@
 }
 
 .offer-item:not(:last-child) {
-    margin-bottom: 22px;
+    margin-bottom: 24px;
+}
+
+.offer-item {
+    list-style-type: none;
+    position: relative;
+}
+
+.offer-item::before {
+    content: "";
+    position: absolute;
+    left: -36px;
+    top: 11px;
+    height: 2px;
+    width: 25px;
+    background-color: var(--light-red);
+    border: none
+
 }
 
 .about-company-stat {
-    margin-top: 37px;
-    margin-bottom: 31px;
+    margin-top: 29px;
+    margin-bottom: 29px;
+    padding-left: 8px;
     text-align: center;
 }
 
@@ -710,7 +739,7 @@
 }
 
 .indicator-item:not(:last-child) {
-    margin-right: 21px;
+    margin-right: 24px;
 }
 
 .indicator-percent {
@@ -719,7 +748,7 @@
 
 .clients {
     position: relative;
-    margin-bottom: 126px;
+    margin-bottom: 110px;
 }
 
 .clients::before {
@@ -734,7 +763,7 @@
 .clients::after {
     content: "";
     position: absolute;
-    bottom: -46px;
+    bottom: -30px;
     background-image: url("../img/decoration/line_horizontal.png");
     width: 1160px;
     height: 2px;
@@ -773,20 +802,28 @@
 
 .map {
     position: absolute;
+    width: 100%;
+    left: 0;
     height: 416px;
     border: none;
 }
 
 .contacts-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 50px;
+    padding-right: 39px;
     width: 319px;
-    height: 308px;
+    min-height: 308px;
     position: relative;
-    top: 103px;
-    left: 190px;
+    top: 50px;
+    left: 125px;
+    background-color: var(--basic-white);
 }
 
 .contacts-title {
-    margin-bottom: 23px;
+    margin: 23px 0;
 }
 
 .contacts-text {
@@ -799,6 +836,7 @@
 
 .contacts-button {
     margin-top: 37px;
+    margin-bottom: 10px;
 }
 
 .main-footer {
@@ -812,6 +850,11 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    width: 261px;
+}
+
+.social-links-item {
+    margin-bottom: 10px;
 }
 
 .social-links-button {
@@ -839,7 +882,8 @@
 }
 
 .friendship-offer {
-    margin-left: 139px;
+    margin-left: 100px;
+    padding-bottom: 10px;
 }
 
 .friendship-title {
@@ -853,9 +897,8 @@
 
 .modal-send-mail {
     position: fixed;
-    top: auto;
+    top: 50px;
     right: 0;
-    bottom: 182px;
     left: 0;
     margin: auto;
     display: flex;
@@ -866,6 +909,10 @@
     box-shadow: 0px 20px 40px var(--modal-shadow);
     background-color: var(--basic-white);
     display: none;
+}
+
+.modal-send-active {
+    display: block;
 }
 
 .modal-title {
@@ -900,7 +947,7 @@
 .send-mail-button {
     grid-area: button;
     margin-top: 47px;
-    width: 259px;
+    width: 249px;
 }
 
 .sender-username,
@@ -919,15 +966,19 @@
 
 .sender-text {
     height: 118px;
+    max-height: 170px;
+    max-width: 840px;
     padding-bottom: 84px;
+    overflow: hidden;
+    
 }
 
 .close-modal-button {
     width: 21px;
     height: 21px;
     position: absolute;
-    top: 78px;
-    right: 100px;
+    top: 76px;
+    right: 103px;
     cursor: pointer;
     border: none;
     background-color: transparent;
@@ -938,7 +989,7 @@
     content: "";
     position: absolute;
     top: 10px;
-    width: 21px;
+    width: 27px;
     height: 4px;
     background-color: var(--light-red);
     opacity: 0.3;
@@ -1055,8 +1106,9 @@
 
 .price-controls .price-input {
     width: 80px;
+    height: 38px;
     padding: 8px;
-    margin-left: 11px;
+    margin-left: 10px;
     text-align: center;
     color: var(--light-black);
     border: none;
@@ -1082,8 +1134,12 @@
     padding-left: 36px;
 }
 
+.filter-grid-option {
+    height: 40px;
+}
+
 .filter-speciality {
-    margin-top: 20px;
+    margin-top: 26px;
 }
 
 .filter-result-button {
@@ -1123,8 +1179,12 @@
     margin-left: auto;
 }
 
+.sort-position-option:not(:last-child) {
+    margin-right: 16px;
+}
+
 .sort-position-option:first-child {
-    margin-left: auto;
+    margin-left: 42px;
 }
 
 .sort-type-label,
@@ -1142,19 +1202,24 @@
     margin-right: 8px;
 }
 
+
 .arrow {
     justify-content: right;
 }
 
-.sort-type-label:hover,
-.sort-direction-label:hover,
-.sort-type-label:focus,
-.sort-direction-label:focus {
+
+.sort-direction-button:focus-within + label,
+.sort-position-button:focus-within + label,
+.sort-direction-button:hover + label,
+.sort-position-button:hover + label {
     opacity: 0.6;
 }
 
+
 .sort-direction-button:checked + label,
-.sort-position-button:checked + label {
+.sort-direction-button:active + label,
+.sort-position-button:checked + label,
+.sort-position-button:active + label {
     opacity: 1;
 }
 
@@ -1190,24 +1255,27 @@
     flex-direction: column;
     align-items: center;
     width: 360px;
-    height: 231px;
+    min-height: 231px;
     position: absolute;
     bottom: -2px;
     z-index: 0;
 }
 
 .template-item:hover,
-.template-item:focus {
+.template-item:focus,
+.template-item:focus-within {
     filter: drop-shadow(0px 6px 15px var(--template-hover));
 }
 
 .template-item:hover .template-browser-img,
-.template-item:focus .template-browser-img {
+.template-item:focus .template-browser-img,
+.template-item:focus-within .template-browser-img {
     opacity: 1;
 }
 
 .template-item:hover .template-content,
-.template-item:focus .template-content {
+.template-item:focus .template-content,
+.template-item:focus-within .template-content {
     z-index: 2;
 }
 
@@ -1237,16 +1305,12 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 50px;
+    width: 44px;
 }
-
-/* .templ-navigation-item:not(:first-child):not(:last-child) .text-link {
-    padding: 17px 20px 15px;
-} */
 
 .templ-navigation-prev .text-link,
 .templ-navigation-next .text-link {
-    width: 260px;
+    width: 244px;
 }
 
 .templ-navigation-item:not(:last-child) {
@@ -1280,22 +1344,3 @@
     clip: rect(0 0 0 0);
     overflow: hidden;
 }
-
-/* 
-Свойство для подстветки grid-ячеек
-По завершении проекта - удалить
-*/
-
-
-
-.mark-grid-item-green {
-    outline: 5px solid rgba(0, 255, 0, 0.7);
-    outline-offset: -5px;
-}
-
-
-.mark-grid-item-red {
-    outline: 5px solid rgba(255, 0, 0, 0.7);
-    outline-offset: -5px;
-}
-
