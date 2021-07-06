@@ -10,7 +10,7 @@
     <link rel="manifest" href="manifest.webmanifest">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
     <link href="css/normalize.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <link href="css/style.min.css" rel="stylesheet" type="text/css">
   </head>
 
   <body class="page-body">
@@ -69,11 +69,12 @@
                 <div class="slider-button-wrapper">
                   <a class="button slider-button text-link" href="blank.html">Узнать больше</a>
                 </div>
-
                 <img
-                class="image slider-img"
-                src="img/slide_1.png"
-                alt="Слайд с тремя смартфонами"
+                  class="image slider-img"
+                  src="img/slide_1.png"
+                  width="760"
+                  height="431"
+                  alt="Слайд с тремя смартфонами"
                 />
               </div>
             </li>
@@ -93,6 +94,8 @@
                   <img
                     class="image slider-img"
                     src="img/slide_2.png"
+                    width="760"
+                    height="431"
                     alt="Слайд с двумя мониторами"
                   />
                 </div>
@@ -115,6 +118,8 @@
                 <img
                   class="image slider-img"
                   src="img/slide_3.png"
+                  width="760"
+                  height="431"
                   alt="Слайд с планшетом и смартфоном"
                 />
               </div>
@@ -147,6 +152,8 @@
             <img
               class="image service-img"
               src="img/service_illustration_1.jpg"
+              width="300"
+              height="146"
               alt="ноутбук на красном фоне"
             />
             <p class="service-content">
@@ -162,6 +169,8 @@
             <img
               class="image service-img"
               src="img/service_illustration_2.jpg"
+              width="300"
+              height="146"
               alt="два смартфона на зеленом фоне"
             />
             <p class="service-content">
@@ -177,6 +186,8 @@
             <img
               class="image service-img"
               src="img/service_illustration_3.jpg"
+              width="300"
+              height="146"
               alt="проекторная доска с презентацией на желтом фоне"
             />
             <p class="service-content">
@@ -360,7 +371,7 @@
           />
         </div>
         <div class="modal-item modal-item-text">
-          <p>Текст письма:</p>
+          <p class="letter-text">Текст письма:</p>
           <p>
             <textarea class="sender-text" name="email_text" rows="8" cols="40" placeholder="В свободной форме"></textarea>
           </p>
@@ -369,6 +380,6 @@
       </form>
       <button class="close-modal-button" type="button" aria-label="Закрыть"></button>
     </section>
-    <script src="js/scripts.js"></script>
+    <script src="js/scripts.min.js"></script>
   </body>
 </html>
