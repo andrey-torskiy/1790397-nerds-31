@@ -35,12 +35,6 @@
 
 }
 
-/* * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-} */
-
 .center {
     padding-left: calc(50vw - 587px);
     padding-right: calc(50vw - 588px);
