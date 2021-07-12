@@ -13,6 +13,8 @@ let isStorageSupport = true;
 let storageName = "";
 let storageEmail = "";
 
+let mapIframe = document.querySelector(".map");
+
 try {
     storageName = localStorage.getItem("name");
     storageEmail = localStorage.getItem("email");
@@ -160,4 +162,5 @@ function slidesChange() {
     }, 5000)
 }
 
-slidesChange();
+//slidesChange();
+

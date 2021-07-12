@@ -9,7 +9,7 @@
     <link rel="apple-touch-icon" href="favicon/180.png">
     <link rel="manifest" href="manifest.webmanifest">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
-    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/normalize.min.css" rel="stylesheet">
     <link href="css/style.min.css" rel="stylesheet" type="text/css">
   </head>
 
@@ -252,8 +252,8 @@
               <img
                 class="image client-logo"
                 src="img/logos/logo_htmlacademy.png"
-                width="209"
-                height="90"
+                width="199"
+                height="57"
                 alt="Логотип компании html academy"
               />
             </a>
@@ -274,8 +274,8 @@
               <img
                 class="image client-logo"
                 src="img/logos/logo_pink.png"
-                width="209"
-                height="90"
+                width="185"
+                height="52"
                 alt="Логотип компании pink"
               />
             </a>
@@ -285,8 +285,8 @@
               <img
                 class="image client-logo"
                 src="img/logos/logo_mishka.png"
-                width="209"
-                height="90"
+                width="173"
+                height="84"
                 alt="Логотип компании mishka"
               />
             </a>
@@ -304,7 +304,9 @@
           <p class="contacts-phone-wrapper">
             <a class="contacts-phone text-link" href="tel:+78005558628">+7 800 555-86-28</a>
           </p>
-          <button class="button contacts-button text" type="button">Напишите нам</button>
+          <div class="contacts-button-wrapper">
+            <a class="button contacts-button text" href="blank.html">Напишите нам</a>
+          </div>
         </div>
       </section>
     </main>
@@ -371,10 +373,8 @@
           />
         </div>
         <div class="modal-item modal-item-text">
-          <p class="letter-text">Текст письма:</p>
-          <p>
-            <textarea class="sender-text" name="email_text" rows="8" cols="40" placeholder="В свободной форме"></textarea>
-          </p>
+          <label for="textarea" class="letter-text">Текст письма:</p>
+          <textarea id="textarea" class="sender-text" name="email_text" rows="8" cols="40" placeholder="В свободной форме"></textarea>
         </div>
         <button class="button send-mail-button" type="submit">Отправить</button>
       </form>
