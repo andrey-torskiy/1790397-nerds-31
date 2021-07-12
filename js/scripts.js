@@ -162,5 +162,5 @@ function slidesChange() {
     }, 5000)
 }
 
-//slidesChange();
+slidesChange();
 
